@@ -1,0 +1,8 @@
+version: '3.3'
+services: 
+    personal-website:
+        build: .
+        ports: 
+            - "8082:80"
+        volumes: 
+            - "./website/:/usr/local/apache2/htdocs/"
